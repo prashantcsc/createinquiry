@@ -1,0 +1,1120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DCP - Create Enquiry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+	
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />    
+	<link rel="stylesheet" type="text/css" href="assets/css/selectstyle.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+	
+</head>
+
+<body>
+    
+        <div class="headerbg">
+            <!-- 1. Header Main Container -->
+            <header class="container-fluid HeaderPanel">
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6 ">
+                        <p class="sdphumberger"><img src="assets/images/hamburger-icon.png" alt="Logo" /></p>
+                        <p class="sdpLogo"><img src="assets/images/scg-logo.png" alt="Logo" class="headerlogo" /></p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 Headermenu">
+                        <ul id="menu">
+                            <li><img src="assets/images/u107.png" alt="Avatar" class="agreedImage"><sup class="newmesnumber">12</sup></li>
+                            <li class="userImage"></li>
+                            <li>
+                                <input id="check01" type="checkbox" name="menu" />
+                                <label class="topmenu" for="check01"><span class="displayhide"> Welcome <span><strong>Mr.
+                                                John Smith</strong></span></span></label>
+                                <ul class="submenu">
+                                    <li><a href="#">View My Profile</a></li>
+                                    <li><a href="#">User Preference/Settings</a></li>
+                                    <li><a href="#">Log out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="mainbox">
+            <!-- 2. Main Container -->
+
+            <div class="container-fluid text-left">
+
+                <div class="row">
+				    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+						<!-- Bread Crumb -->
+						<ol class="breadcrumb">
+							<li>Dashboard</li>
+							<li>Create Inquiry</li>
+						</ol>
+					</div>
+					<div class="col-10 col-sm-8 col-md-8 col-lg-8 col-xl-4 center-flow">
+						<div class="scg-flow sales-flow">
+							<!-- flow diagram -->
+
+							<div class="flow-circle active">
+								<span>CREATE</span>
+								<a href="#">1</a>
+							</div>
+							<div class="flow-line"></div>
+							<div class="flow-circle inactive">
+								<span>BID APPROVE</span>
+								<a href="#">2</a>
+							</div>
+							<div class="flow-line"></div>
+							<div class="flow-circle inactive">
+								<span>INITIATE</span>
+								<a href="#">3</a>
+							</div>
+							<div class="flow-line"></div>
+							<div class="flow-circle inactive">
+								<span>COMPLETE</span>
+								<a href="#">4</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+                <div class="page-title-container">
+                    <!-- page title container -->
+				    <div class="row">
+					    <div class="col-6 col-sm-7 col-md-9 col-lg-9 col-xl-10">
+							<div class="page-title">
+								<!-- page title -->
+								<a routerLink="/" class="arrowbg">
+									<img src="assets/images/arrow.png" alt="previousPage" class="previousImg">
+								</a>
+								<span class="prevpage">Create Inquiry</span>
+							</div>
+						</div>
+						<div class="col-6 col-sm-5 col-md-3 col-lg-3 col-xl-2">
+						   <div class="btnpos">
+						   <button type="button" class="btn btn-secondary cancel-button">CANCEL</button>
+							<button type="button" class="btn btn-secondary confirm-button">CONFIRM</button>
+						   </div>
+						</div>
+					</div>
+                </div>
+
+                <div class="search-form-fields-contaier">
+                    <!-- Search Form fields main container -->
+                    <div class="search-form-fields-sub-container search-form-fields">
+                        <div class="row flex-row panel-title-block">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-9 search-panelbg">
+								<div class="search_darkpanel">
+									<div class="trans-title"><span>Transaction ID:</span> A1234567890</div>
+									<div class="customer-search-block">
+										<span class="search-title">Customer Search</span>
+
+										<div class="sales-group">
+
+											<select>
+												<option value="select" default="">Sales Group</option>
+												<option value="select2">select2</option>
+												<option value="select3">select3</option>
+												<option value="select4">select4</option>
+											</select>
+										</div>
+										<div class="end-customer">
+											<select>
+												<option value="select" default="">Customer Type</option>
+												<option value="select2">End customer</option>
+												<option value="select3">Sold to</option>
+												<option value="select4">Sales Partner</option>
+											</select>
+										</div>
+										<div class="customer-name">
+
+											<select id='selUser9'>
+												<option value="select" default="">Customer Name</option>
+												<option value="select2">select2</option>
+												<option value="select3">select3</option>
+												<option value="select4">select4</option>
+											</select>
+										</div>
+
+										<a href="#" class="Icon-refresh"><img src="assets/images/u1239.png" /></a>
+										<a href="#" class="recent-transact "><img src="assets/images/u1991.png" width="26px" height="25px" /></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3 padd0">
+								<div class="search_lightpanel">
+									<div class="icon_middle"><a href="#"><img src="assets/images/icon-edit.png" ><span>EDIT</span></a></div>
+									<div class="icon_middle"><img src="assets/images/icon-save.png"><span>SAVE</span></div>
+									<div class="icon_middle"><img src="assets/images/icon-attach.png" ><span>ATTACH</span></div>
+									<div class="icon_middle"><img src="assets/images/icon-copy.png" ><span>COPY</span></div>
+									<div class="icon_middle mr-3"><img src="assets/images/icon-qua.png "><span>QUOTATION</span></div>
+									<div class="icon_middle"><img src="assets/images/icon-summary.png"><span>SUMMARY</span></div>
+                                </div>
+							</div>
+                         
+                        </div>
+
+
+                        <div class="row flex-row">
+                           
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 col-half-offset">
+                                <div class="form-group">
+                                    <label for="Company Name">Company</label>									
+                                    <select placeholder="Select">
+                                        <option value="select" default>Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+							
+							<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Customer Name">Customer Name</label>
+                                    <select>
+                                        <option value="select" default>Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 col-half-offset">
+                                <div class="form-group">
+                                    <label for="CustomerSQType">Customer SQ Type</label>
+									
+								    <!-- Dropdown --> 
+										<select id='selUser'>
+                                        <option value="select" default>Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 col-half-offset">
+                                <div class="form-group">
+                                    <label for="Channel">Channel</label>
+									 <select placeholder="Select">
+                                        <option value="select" default>Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                  
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 col-half-offset" id="p4">
+                                <div class="form-group">
+                                    <label for="Sold TO">Sold-To</label>
+                                    <!-- Dropdown --> 
+										<select id='selUser1'>
+                                        <option value="select" default>Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 col-half-offset" id="p4">
+                                <div class="form-group">
+                                    <label for="SHIP TO">Ship-To</label>
+                                    <select id='selUser2'>
+                                        <option value="select" default>Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 col-half-offset" id="p5">
+                                <div class="form-group">
+                                    <label for="End Customer">End Customer</label>
+									<select id='selUser3'>
+                                        <option value="select" default>Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Sales Partner 1">Sales Partner1</label>
+                                    <select id='selUser4'>
+                                        <option value="select" default>Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Ship from">Ship From</label>
+                                    <select id='selUser5'>
+                                        <option value="select" default>Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Sales Group">Region</label>
+                                    <p class="labelview">Kolkata</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Channel Group">Incoterms</label>
+                                    <select>
+                                        <option value="select" default>Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">
+                                <div class="form-group">
+                                    <label for="ValiditytoCustomer">Customer SQ type</label>
+                                    <select>
+                                        <option value="select" default>Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">
+                                <div class="form-group">
+                                    <label for="Payment Term">Payment Term</label>
+                                    <select>
+                                        <option value="select" default>Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">
+                                <div class="form-group">
+                                    <label for="Channel Group">Currency</label>
+                                    <select>
+                                        <option value="select" default>Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Remark for CS">Remark for CS</label>
+                                    <input type="text" value="" >
+                                </div>
+                            </div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Sales Group">Header Status</label>
+                                    <p class="labelview">Request</p>
+                                </div>
+                            </div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-4 text-right"><img src="assets/images/icon-recentiqbid.png"></div>
+                        </div>
+                    </div>
+					
+					<hr />
+                    <!-- Additional Container -->
+                    <div class="search-form-fields-sub-container search-form-fields-additional">
+                        <h4 class="sub-container-title">Additional fields</h4>
+                        <div class="row flex-row">
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Sales Organization">Sales Organization</label>
+                                    <select>
+                                        <option value="select" default="">Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Sales Group">Sales Group</label>
+                                    <select>
+                                        <option value="select" default="">Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="PO Number">PO Number</label>
+                                    <input type="text" value="" >
+                                </div>
+                            </div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="PO Number">PO Date</label>                                    
+									<div class='input-group date' id='datetimepicker8'>
+											<input type='text' class="form-control" />
+											<span class="input-group-addon inputcalbdr">
+												<span class="fa fa-calendar">
+												</span>
+											</span>
+								    </div>
+
+                                </div>
+							</div>
+
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 col-half-offset">
+                                <div class="form-group">
+                                    <label for="Sales partner 2">Sales Partner2</label>
+                                    <select id='selUser6'>
+                                        <option value="select" default="">Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 col-half-offset">
+                                <div class="form-group">
+                                    <label for="Payer">Payer</label>
+                                    <select id='selUser10'>
+                                        <option value="select" default="">Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 col-half-offset" id="p4">
+                                <div class="form-group">
+                                    <label for="Billing To">Billing To</label>
+                                    <select id='selUser7'>
+                                        <option value="select" default="">Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 col-half-offset" id="p5">
+                                <div class="form-group">
+                                    <label for="Sub Sold to">Sub Sold to</label>
+                                    <select id='selUser8'>
+                                        <option value="select" default="">Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Sales Representative">Sales Representative</label>
+                                    <select>
+                                        <option value="select" default="">Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Price List Type">Price List Type</label>
+                                    <select>
+                                        <option value="select" default="">Select</option>
+                                        <option value="select2">select2</option>
+                                        <option value="select3">select3</option>
+                                        <option value="select4">select4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Sales Group">Pricing Date</label>
+                                    <p class="labelview">02/04/2019</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Sales Group">Customer Classification</label>
+                                    <p class="labelview">Domestic</p>
+                                </div>
+                            </div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Sales Group">Exchange Rate</label>
+                                    <p class="labelview">70 RS</p>
+                                </div>
+                            </div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Sales Group">Exch. Rate Date</label>
+                                    <p class="labelview">02/04/2019</p>
+                                </div>
+                            </div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Sales Group">Exch. Rate Type</label>
+                                    <p class="labelview">Dollar vs RS</p>
+                                </div>
+                            </div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Sales Group">Created At</label>
+                                    <p class="labelview">02/04/2019 5:31PM</p>
+                                </div>
+                            </div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="Sales Group">Created By</label>
+                                    <p class="labelview">Admin</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">
+                                <div class="form-group">
+                                    <label for="Channel Group">Validity to Customer</label>
+                                    <div class='input-group date' id='datetimepicker7'>
+											<input type='text' class="form-control" />
+											<span class="input-group-addon inputcalbdr">
+												<span class="fa fa-calendar">
+												</span>
+											</span>
+								    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href="#" class="more-details-link">More Details</a>
+                </div>
+
+                <div class="sales-table-buttons">
+                    <div class="">
+                        <button type="button" class="btn btn-secondary btn-small ">CHECK</button>
+                        <button type="button" class="btn btn-secondary btn-small ">PARK</button>
+                    </div>
+					<div>
+                    <div class="icon_middle mb-4"><a href="#"><img src="assets/images/icon-add.png" ><span>ADD</span></a></div>
+					<div class="icon_middle"><a href="#"><img src="assets/images/icon-delete.png"><span>DELETE</span></a></div>
+					</div>
+                </div>
+
+                <div class="scg-data-table">
+
+                    <div class="mobile-view">
+
+                        <div class="mobile-table-select-all checkbox-col">
+                            <input type="checkbox" />
+                            Select All
+                        </div>
+                        <table role="table" class="table table-stripped ">
+                            <thead role="rowgroup">
+                                <tr role="row">
+                                    <th role="columnheader" class="checkbox-col"><input type="checkbox" /></th>
+									
+                                    <th role="columnheader">Material ID</th>
+									<th role="columnheader">Quantity/Unit</th>
+									<th role="columnheader">By Pass Price/FOC</th>
+                                    <th role="columnheader">SQ Type</th>
+									<th role="columnheader">Quantity SQ Type</th>
+									<th role="columnheader">Validity Date/Time</th>
+                                    <th role="columnheader">Selling Price</th>
+                                    <th role="columnheader">Com Upfront</th>
+									<th role="columnheader">Com KB-T1</th>
+                                    <th role="columnheader">Requested Load Date</th>
+                                   <!-- <th role="columnheader">Validity Date/Time</th>
+                                    <th role="columnheader">Remarks</th>-->
+                                    <th role="columnheader">Error Message</th>
+                                    <th role="columnheader">Sales Group</th>
+                                    <th role="columnheader" class="status-col">Status</th>
+									<th role="columnheader"></th>
+									
+                                </tr>
+                            </thead>
+                            <tbody role="rowgroup">
+                                <tr role="row">
+                                    <td role="cell" class="checkbox-col" data-title="">
+                                        <a href="#" class="table-collapse plus-icon icon-status"></a>
+                                        <input type="checkbox" />
+                                    </td>
+
+									<td role="cell" data-title="Material ID" class="material-col">
+                                        <div class="material-field-group">
+                                            <input type="text" value="P640JNZ0025P" />
+                                        </div>
+                                        <button type="button" class="btn btn-secondary btn-small sub-item-button"
+                                            onclick="showCurrentItem(this)">+
+                                            SUB ITEM</button>
+                                    </td>
+									<td role="cell" data-title="Qty/Unit">
+                                        <div class="d-flex flex-column">
+                                            <span class="scg-status">200</span>
+                                            <div class="form-group">
+                                                    <select id="u1685_input">
+                                                        <option selected="" value="Select">TON</option>
+                                                        <option value="Company 1">KGS</option>
+                                                        <option value="Company 2">PC</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </td>
+									<td role="cell" data-title="By Pass Price / FOC" class="hide-cell">
+                                        <div class="">
+                                         
+                                            <label><input type="checkbox" /><span class="ml-1">By Pass Price</span></label>
+                                            <div class="d-flex flex-row sub-item">
+                                                <div class="status-info-inline">
+                                                    <a href="#" class="scg-close-icon"></a>
+                                                    <a href="#" class="scg-ok-icon"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+										 <div class="">                                         
+                                            <label><input type="checkbox" /><span class="ml-1">FOC</span></label>
+                                            <div class="d-flex flex-row sub-item">
+                                                <div class="status-info-inline">
+                                                    <a href="#" class="scg-close-icon"></a>
+                                                    <a href="#" class="scg-ok-icon"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td role="cell" data-title="Sales Quota Type" class="hide-cell">
+                                        <div class="">
+                                            <div class="d-flex flex-row">
+                                                <div class="form-group">
+                                                    <select id="u1685_input">
+                                                        <option selected="" value="Select">MIN</option>
+                                                        <option value="Company 1">Company 1</option>
+                                                        <option value="Company 2">Company 2</option>
+                                                    </select>
+                                                </div>
+                                               
+                                            </div>
+                                            <label><input type="checkbox"/> MIN By BU</label>
+                                            <div class="d-flex flex-row sub-item">
+                                                <div class="form-group">
+                                                    <select>
+                                                        <option selected="" value="Select">MOST</option>
+                                                        <option value="Company 1">Company 1</option>
+                                                        <option value="Company 2">Company 2</option>
+                                                    </select>
+                                                </div>
+                                               
+                                                <div class="status-info-inline">
+                                                    <a href="#" class="scg-close-icon"></a>
+                                                    <a href="#" class="scg-ok-icon"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+									
+									<td role="cell" data-title="Qty SQ Type" class="hide-cell">
+                                        <div class="form-group">
+                                            <input type="text" class="text-right" value="200.00" />
+                                        </div>
+                                    </td>
+									<td role="cell" data-title="Validity Date/Time" class="hide-cell">
+                                      08/11/2018 <br />17:50
+                                    </td>
+                                    <td role="cell" data-title="Selling Price" class="hide-cell">
+									    <div class="form-group">
+											<input type="text" class="text-right" value="1200" />                                     
+                                        </div>
+                                    
+									</td>
+									<td role="cell" data-title="Com Upfront" class="hide-cell">
+										<div class="d-flex flex-column">        
+											<div class="form-group">
+												<input type="text" class="text-right" value="1200" />
+											</div>
+                                        </div>
+										<select id="u1685_input">
+                                                <option selected="" value="Select">THB</option>
+                                                <option value="Company 1">USD</option>
+                                                <option value="Company 2">EUR</option>
+                                        </select>
+									</td>
+                                    <td role="cell" data-title="Com KB-T1" class="hide-cell">
+										<div class="d-flex flex-column">        
+											<div class="form-group">
+												<input type="text" class="text-right" value="1200" />
+											</div>
+                                        </div>
+										<select id="u1685_input">
+                                                <option selected="" value="Select">THB</option>
+                                                <option value="Company 1">USD</option>
+                                                <option value="Company 2">EUR</option>
+                                        </select>
+									</td>
+									
+                                    <!-- <td role="cell"><input type="text" /></td> -->                                    
+                                    <td role="cell" data-title="Requested Load Date" class="hide-cell"><div class='input-group date calenderpos' id='datetimepicker9'>
+											<input type='text' value="08/11/2018" class="form-control" />
+											<span class="input-group-addon inputcalbdr">
+												<span class="fa fa-calendar">
+												</span>
+											</span>
+								    </div></td>
+
+                                    <!--<td role="cell" data-title="Remarks" class="hide-cell"><input type="text" value="enter" /></td>-->
+                                    <td role="cell" data-title="Error Message" class="hide-cell">&nbsp;</td>
+                                    <td role="cell" data-title="Sales Group" class="hide-cell">
+									<div class="d-flex flex-column">                                           
+                                            <div class="form-group">											   
+                                                <select id="u1685_input">
+                                                        <option selected="" value="Select">Select</option>
+                                                        <option value="Company 1">Select 1</option>
+                                                        <option value="Company 2">Select 2</option>
+														<option value="Company 1">Select 3</option>
+                                                        <option value="Company 2">Select 4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+									</td>
+                                    <td role="cell" data-title="Status">
+                                        <div class="d-flex flex-column">
+                                            <span class="scg-status scg-check">Check</span>
+                                            <div class="scg-status-icon-wrapper sub-item">
+                                                <a href="#" class="scg-close-icon"></a>
+                                                <a href="#" class="scg-ok-icon"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+									<td role="cell" data-title="Status">
+                                        <div class="d-flex flex-column">
+                                            <span><img src="assets/images/item-dot.png"/></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr role="row">
+                                    <td role="cell" class="checkbox-col" data-title="">
+                                        <a class="table-collapse plus-icon icon-status"></a>
+                                        <input type="checkbox" />
+                                    </td>
+									
+                                    <td role="cell" data-title="Material ID" class="material-col">
+                                        <div class="material-field-group">
+                                            <input type="text" value="P640JNZ0025P" />
+                                        </div>
+                                        <button type="button" class="btn btn-secondary btn-small sub-item-button">+ SUB
+                                            ITEM</button>
+                                    </td>
+									<td role="cell" data-title="Qty/Unit">
+                                        <div class="d-flex flex-column">
+                                            <span class="scg-status">200</span>
+                                            <div class="form-group">
+                                                    <select id="u1685_input">
+                                                        <option selected="" value="Select">TON</option>
+                                                        <option value="Company 1">KGS</option>
+                                                        <option value="Company 2">PC</option>
+                                                    </select>
+                                                </div>
+                                        </div>
+                                    </td>
+									<td role="cell" data-title="By Pass Price / FOC" class="hide-cell">
+                                        <div class="d-flex flex-row checkboxlbl">
+                                            <label><input type="checkbox"/><span class="ml-1">By Pass Price</span></label>
+										</div>	
+                                        <div class="d-flex flex-row sub-item">
+                                            <div class="status-info-inline">
+                                                <a href="#" class="scg-close-icon"></a>
+                                                <a href="#" class="scg-ok-icon"></a>
+                                            </div>
+                                        </div>                                       
+										<div class="checkboxlbl">
+										    <label><input type="checkbox"/><span class="ml-1">FOC</span></label>
+                                            <div class="d-flex flex-row sub-item">
+                                                <div class="status-info-inline">
+                                                    <a href="#" class="scg-close-icon"></a>
+                                                    <a href="#" class="scg-ok-icon"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td role="cell" data-title="SQ Type" class="hide-cell">
+                                        <div class="">
+                                            <div class="d-flex flex-row">
+                                                <div class="form-group">
+                                                    <select id="u1685_input">
+                                                        <option selected="" value="Select">MIN</option>
+                                                        <option value="Company 1">Company 1</option>
+                                                        <option value="Company 2">Company 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <label><input type="checkbox" />MIN By BU</label>
+                                            <div class="d-flex flex-row sub-item">
+                                                <div class="form-group">
+                                                    <select>
+                                                        <option selected="" value="Select">MOST</option>
+                                                        <option value="Company 1">Company 1</option>
+                                                        <option value="Company 2">Company 2</option>
+                                                    </select>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <!-- <td role="cell"><input type="text" /></td> -->
+									<td role="cell" data-title="Qty SQ Type" class="hide-cell">
+                                        <div class="form-group">
+                                            <input type="text" class="text-right" value="300.00" />
+                                        </div>
+                                    </td>
+									<td role="cell" data-title="Validity Date/Time" class="hide-cell">
+                                      08/11/2018<br />17:50
+                                    </td>
+                                    <td role="cell" data-title="Selling Price" class="hide-cell">
+										<div class="d-flex flex-column">          
+                                            <div class="form-group">
+											    <input type="text" class="text-right" value="1200" />          
+                                            </div>
+                                        </div>
+									</td>
+                                    <td role="cell" data-title="Com Upfront" class="hide-cell">
+									<div class="d-flex flex-column">
+											<div class="form-group">
+											    <input type="text" class="text-right" value="1200" />
+                                            </div>
+                                    </div>
+									<select id="u1685_input">
+                                            <option selected="" value="Select">THB</option>
+                                            <option value="Company 1">USD</option>
+                                            <option value="Company 2">EUR</option>
+                                    </select>
+									</td>
+									<td role="cell" data-title="Com KB-T1" class="hide-cell">
+										<div class="d-flex flex-column">          
+                                            <div class="form-group">
+											    <input type="text" class="text-right" value="1200" />            
+                                            </div>
+                                        </div>
+										<select id="u1685_input">
+                                            <option selected="" value="Select">THB</option>
+                                            <option value="Company 1">USD</option>
+                                            <option value="Company 2">EUR</option>
+                                    </select>
+									</td>
+                                   <td role="cell" data-title="Requested Load Date" class="hide-cell">
+								   <div class="input-group date calenderpos" id='datetimepicker9'>
+											<input type='text' value="08/11/2018" class="form-control" />
+											<span class="input-group-addon inputcalbdr">
+												<span class="fa fa-calendar">
+												</span>
+											</span>
+								    </div></td>
+
+                                    <!--<td role="cell" data-title="Remarks" class="hide-cell"><input type="text" value="enter" /></td>-->
+                                    <td role="cell" data-title="Error Message" class="hide-cell">&nbsp;</td>
+                                    <td role="cell" data-title="Sales Group" class="hide-cell">
+									<div class="d-flex flex-column">          
+                                            <div class="form-group">					   
+                                                <select id="u1685_input">
+                                                        <option selected="" value="Select">Select</option>
+                                                        <option value="Company 1">Select 1</option>
+                                                        <option value="Company 2">Select 2</option>
+														<option value="Company 1">Select 3</option>
+                                                        <option value="Company 2">Select 4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+									</td>
+                                    <td role="cell" data-title="Status">
+                                        <div class="d-flex flex-column">
+                                            <span class="scg-status scg-check">Check</span>
+                                            <div class="d-flex scg-status-icon-wrapper sub-item">
+                                                <a href="#" class="scg-close-icon"></a>
+                                                <a href="#" class="scg-ok-icon"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+								    <td role="cell" data-title="">
+                                        <div class="d-flex flex-column">
+                                            <span><img src="assets/images/item-dot.png"/></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr role="row">
+                                    <td role="cell" class="checkbox-col" data-title="">
+                                        <a class="table-collapse plus-icon icon-status"></a>
+                                        <input type="checkbox" />
+                                    </td>
+									
+                                    <td role="cell" data-title="Material ID" class="material-col">
+                                        <div class="material-field-group">
+                                            <input type="text" value="P640JNZ0025P" />
+                                        </div>
+                                        <button type="button" class="btn btn-secondary btn-small sub-item-button">+ SUB
+                                            ITEM</button>
+                                    </td>
+									<td role="cell" data-title="Qty/Unit">
+                                        <div class="d-flex flex-column">
+                                            <span class="scg-status text-right">200</span>
+                                            <div class="form-group">
+                                                    <select id="u1685_input">
+                                                        <option selected="" value="Select">TON</option>
+                                                        <option value="Company 1">KGS</option>
+                                                        <option value="Company 2">PC</option>
+                                                    </select>
+                                                </div>
+                                        </div>
+                                    </td>
+									<td role="cell" data-title="By Pass Price / FOC" class="hide-cell">
+                                        <div class="">
+                                         
+                                            <label><input type="checkbox"/><span class="ml-1">By Pass Price</span></label>
+                                            <div class="d-flex flex-row sub-item">
+                                                <div class="status-info-inline">
+                                                    <a href="#" class="scg-close-icon"></a>
+                                                    <a href="#" class="scg-ok-icon"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+										 <div class="">
+                                         
+                                            <label><input type="checkbox" /><span class="ml-1">FOC</span></label>
+                                            <div class="d-flex flex-row sub-item">
+                                                <div class="status-info-inline">
+                                                    <a href="#" class="scg-close-icon"></a>
+                                                    <a href="#" class="scg-ok-icon"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td role="cell" data-title="Sales Quota Type" class="hide-cell">
+                                        <div class="">
+                                            <div class="d-flex flex-row">
+                                                <div class="form-group">
+                                                    <select id="u1685_input">
+                                                        <option selected="" value="Select">MIN</option>
+                                                        <option value="Company 1">Company 1</option>
+                                                        <option value="Company 2">Company 2</option>
+                                                    </select>
+                                                </div>                                              
+                                            </div>
+                                            <label><input type="checkbox" /> MIN By BU</label>
+                                            <div class="d-flex flex-row sub-item">
+                                                <div class="form-group">
+                                                    <select>
+                                                        <option selected="" value="Select">MOST</option>
+                                                        <option value="Company 1">Company 1</option>
+                                                        <option value="Company 2">Company 2</option>
+                                                    </select>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </td>
+									<td role="cell" data-title="Qty SQ Type" class="hide-cell">
+                                        <div class="form-group">
+                                            <input type="text" class="text-right" value="200.00" />
+                                        </div>
+                                    </td>
+									<td role="cell" data-title="Validity Date/Time" class="hide-cell">
+                                      08/11/2018 <br />17:50
+                                    </td>
+                                    <!-- <td role="cell"><input type="text" /></td> -->
+                                    <td role="cell" data-title="Selling Price" class="hide-cell">
+									<div class="d-flex flex-column">          
+                                            <div class="form-group">
+											    <input type="text" class="text-right" value="1200" />                                               
+                                            </div>
+                                        </div>
+									</td>
+                                     <td role="cell" data-title="Com Upfront" class="hide-cell">
+										<div class="d-flex flex-column">         
+                                            <div class="form-group">
+											    <input type="text" class="text-right" value="1200" />
+                                                
+                                            </div>
+                                        </div>
+										<select id="u1685_input">
+                                            <option selected="" value="Select">THB</option>
+                                            <option value="Company 1">USD</option>
+                                            <option value="Company 2">EUR</option>
+                                        </select>
+									</td>
+									<td role="cell" data-title="Com KB-T1" class="hide-cell">
+										<div class="d-flex flex-column">        
+											<div class="form-group">
+												<input type="text" class="text-right" value="1200" />
+											</div>
+                                        </div>
+										<select id="u1685_input">
+                                                <option selected="" value="Select">THB</option>
+                                                <option value="Company 1">USD</option>
+                                                <option value="Company 2">EUR</option>
+                                        </select>
+									</td>
+                                    <td role="cell" data-title="Requested Load Date" class="hide-cell"><div class="input-group date calenderpos" id='datetimepicker9'>
+											<input type='text' value="08/11/2018" class="form-control" />
+											<span class="input-group-addon inputcalbdr">
+												<span class="fa fa-calendar">
+												</span>
+											</span>
+								    </div></td>
+                                    
+                                    <td role="cell" data-title="Error Message" class="hide-cell">&nbsp;</td>
+                                    <td role="cell" data-title="Sales Group" class="hide-cell">
+									<div class="d-flex flex-column">                                           
+                                            <div class="form-group">											   
+                                                <select id="u1685_input">
+                                                        <option selected="" value="Select">Select</option>
+                                                        <option value="Company 1">Select 1</option>
+                                                        <option value="Company 2">Select 2</option>
+														<option value="Company 1">Select 3</option>
+                                                        <option value="Company 2">Select 4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+									</td>
+                                    <td role="cell" data-title="Status">
+                                        <div class="d-flex flex-column ">
+                                            <span class="scg-status">PARK</span>
+                                            <div class="d-flex scg-status-icon-wrapper sub-item">
+                                                <a href="#" class="scg-close-icon"></a>
+                                                <a href="#" class="scg-ok-icon"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+									<td role="cell" data-title="Status">
+                                        <div class="d-flex flex-column">
+                                            <span><img src="assets/images/item-dot.png"/></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+		</div>
+            <div class="footer">
+                <!-- 3. Footer Container -->
+                <footer class="container-fluid">
+                    <div class="copyright">Copyright © 2018 SCG Chemicals Co. Ltd. All Rights Reserved.</div>
+                    <div class="footerlink">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>|
+                            <li><a href="#">Terms of Use</a></li>|
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#"><img src="assets/images/linkdin.png" /></a></li>
+                            <li><a href="#"><img src="assets/images/facebook.png" /></a></li>
+                            <li><a href="#"><img src="assets/images/youtube.png" /></a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+
+        <script>
+            $(document).ready(function () {
+                $(".table-collapse").on('click', function (event) {
+
+                    $(this).toggleClass('minus-icon');
+
+                    if ($(this).hasClass('minus-icon')) {
+                        showCurrentCell($(this));
+                    } else {
+                        hideCurrentCell($(this));
+                        return false;
+                    }
+                    return false;
+                });
+			$('#datetimepicker7').datetimepicker({
+                      'showTimepicker': false
+  
+            });
+			 // Initialize select2
+  $("#selUser").select2(); 
+  $("#selUser1").select2();
+   $("#selUser2").select2();
+   $("#selUser3").select2();
+  $("#selUser4").select2();
+   $("#selUser5").select2();
+   $("#selUser6").select2();
+  $("#selUser7").select2();
+   $("#selUser8").select2();
+    $("#selUser9").select2();
+	
+    $("#selUser10").select2();
+  // Read selected option
+  $('#but_read').click(function(){
+    var username = $('#selUser option:selected').text();
+    var userid = $('#selUser').val();
+
+    $('#result').html("id : " + userid + ", name : " + username);
+
+  });
+            });
+
+            function showCurrentCell(ele) {
+                var selEle = $(ele).parent().nextAll();
+                if ($(selEle).hasClass("hide-cell")) {
+                    $(selEle).removeClass('hide-cell');
+                    $(selEle).find('.sub-item-button').addClass("scg-show");
+                }
+            }
+
+            function hideCurrentCell(ele) {
+                var selEle = $(ele).parent().nextAll();
+                $(selEle).not(":nth-child(2),:last-child").addClass('hide-cell');
+                $(selEle).find('.sub-item-button').removeClass("scg-show");
+            }
+            //create an event handler
+            function showCurrentItem(ele) {alert('test');
+                var jEle = $(ele);
+                $(jEle).closest('tr').find('.sub-item').removeClass('sub-item');
+            }
+			
+			
+        $(function () {
+            $('#datetimepicker8').datetimepicker({
+                icons: {                    
+                    date: "fa fa-calendar",
+                    up: "fa fa-arrow-up",
+                    down: "fa fa-arrow-down"
+                }
+            });
+			$('#datetimepicker7').datetimepicker({
+                      'showTimepicker': false
+  
+            });
+			$('#datetimepicker9').datetimepicker({
+                      'showTimepicker': false
+  
+            });
+			                   
+        });
+        </script>
+	<script src="assets/js/selectstyle.js"></script>	
+		
+</body>
+
+</html>
